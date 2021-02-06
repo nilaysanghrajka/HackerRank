@@ -1,34 +1,52 @@
-# HackerRank Challenge (Day 0: Hello World)
+# HackerRank Challenge (Day 2: Operators)
 
 ## Objective
-In this challenge, we review some basic concepts that will get you started with this series. You will need to use the same (or similar) syntax to read input and write output in challenges throughout HackerRank.
+In this challenge, you will work with arithmetic operators. Check out the Tutorial tab for learning materials and an instructional video.
 
 ## Task
-To complete this challenge, you must save a line of input from stdin to a variable, print Hello, World. on a single line, and finally print the value of your variable on a second line.
+Given the meal price (base cost of a meal), tip percent (the percentage of the meal price being added as tip), and tax percent (the percentage of the meal price being added as tax) for a meal, find and print the meal's total cost. Round the result to the nearest integer.
 
-Note: The instructions are Java-based, but we support submissions in many popular languages. You can switch languages using the drop-down menu above your editor, and the  variable may be written differently depending on the best-practice conventions of your submission language.
+### Example
+***mealcost = 100***
+***tippercent = 15***
+***taxpercent = 8***
+A tip of 15% * 100 = 15, and the taxes are 8% * 100 = 8. Print the value **123** and return from the function.
+
+###Function Description
+Complete the solve function in the editor below.
+
+solve has the following parameters:
+
+- int meal_cost: the cost of food before tip and tax
+- int tip_percent: the tip percentage
+- int tax_percent: the tax percentage
+Returns The function returns nothing. Print the calculated value, rounded to the nearest integer.
+
+**Note**: Be sure to use precise values for your calculations, or you may end up with an incorrectly rounded result.
 
 ## Input Format
 
-A single line of text denoting  (the variable whose contents must be printed).
-
-## Output Format
-
-Print Hello, World. on the first line, and the contents of  on the second line.
+There are 3 lines of numeric input:
+The first line has a double, ***mealcost*** (the cost of the meal before tax and tip).
+The second line has an integer, ***tippercent*** (the percentage of ***mealcost*** being added as tip).
+The third line has an integer, ***taxpercent*** (the percentage of ***mealcost*** being added as tax).
 
 ## Sample Input
 ```
-Welcome to 30 Days of Code!
+12.00
+20
+8
 ```
 ## Sample Output
 ```
-Hello, World. 
-Welcome to 30 Days of Code!
+15
 ```
-## Explanation
-
-On the first line, we print the string literal Hello, World.. On the second line, we print the contents of the  variable which, for this sample case, happens to be Welcome to 30 Days of Code!. If you do not print the variable's contents to stdout, you will not pass the hidden test case.
 
 ## Languages
 
-These were completed in Python 3, Java, C#, Swift and JavaScript
+These were completed in 
+- Python3
+- Java
+- C#
+- Swift
+- JavaScript

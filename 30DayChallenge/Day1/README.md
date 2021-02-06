@@ -45,4 +45,9 @@ When we concatenate HackerRank with is the best place to learn and practice codi
 
 ## Languages
 
-These were completed in Python 3, Java, C#, Swift and JavaScript
+These were completed in 
+- Python3
+- Java
+- C#
+- Swift
+- JavaScript

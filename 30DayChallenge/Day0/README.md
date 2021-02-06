@@ -31,4 +31,9 @@ On the first line, we print the string literal Hello, World.. On the second line
 
 ## Languages
 
-These were completed in Python 3, Java, C#, Swift and JavaScript
+These were completed in 
+- Python3
+- Java
+- C#
+- Swift
+- JavaScript
