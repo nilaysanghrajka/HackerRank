@@ -1,34 +1,52 @@
 # HackerRank Challenge (Day 0: Hello World)
 
 ## Objective
-In this challenge, we review some basic concepts that will get you started with this series. You will need to use the same (or similar) syntax to read input and write output in challenges throughout HackerRank.
+In this challenge, we work conditional statements.
 
 ## Task
-To complete this challenge, you must save a line of input from stdin to a variable, print Hello, World. on a single line, and finally print the value of your variable on a second line.
+Given an integer, **n** , perform the following conditional actions:
 
-Note: The instructions are Java-based, but we support submissions in many popular languages. You can switch languages using the drop-down menu above your editor, and the  variable may be written differently depending on the best-practice conventions of your submission language.
+- If **n** is odd, print Weird
+- If **n** is even and in the inclusive range of **2** to **5**, print Not Weird
+- If **n** is even and in the inclusive range of **6** to **20**, print Weird
+- If **n** is even and greater than **20**, print Not Weird
+Complete the stub code provided in your editor to print whether or not **n** is weird.
 
 ## Input Format
-
-A single line of text denoting  (the variable whose contents must be printed).
+A single line containing a positive integer, **n**.
 
 ## Output Format
+Print Weird if the number is weird; otherwise, print Not Weird.
 
-Print Hello, World. on the first line, and the contents of  on the second line.
+## Sample Input 0
+```
+3
+```
+## Sample Output 0
+```
+Weird
+```
 
-## Sample Input
+## Sample Input 1
 ```
-Welcome to 30 Days of Code!
+24
 ```
-## Sample Output
+## Sample Output 1
 ```
-Hello, World. 
-Welcome to 30 Days of Code!
+Not Weird
 ```
+
 ## Explanation
+Sample Case 0: **n = 3**
+**n** is odd and odd numbers are weird, so we print Weird.
 
-On the first line, we print the string literal Hello, World.. On the second line, we print the contents of the  variable which, for this sample case, happens to be Welcome to 30 Days of Code!. If you do not print the variable's contents to stdout, you will not pass the hidden test case.
+Sample Case 1: **n = 24**
+**n > 20** and **n** is even, so it is not weird. Thus, we print Not Weird.
 
 ## Languages
-
-These were completed in Python 3, Java, C#, Swift and JavaScript
+These were completed in
+- Python3
+- Java
+- C#
+- Swift
+- JavaScript

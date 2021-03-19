@@ -1,7 +1,7 @@
 # HackerRank Challenge (Day 1: Data Types)
 
 ## Objective
-Today, we're discussing data types. Check out the Tutorial tab for learning materials and an instructional video!
+In this challenge, we review data types.
 
 ## Task
 Complete the code in the editor below. The variables **i**, **d**, and **s** are already declared and initialized for you. You must:
@@ -45,7 +45,7 @@ When we concatenate HackerRank with is the best place to learn and practice codi
 
 ## Languages
 
-These were completed in 
+These were completed in
 - Python3
 - Java
 - C#

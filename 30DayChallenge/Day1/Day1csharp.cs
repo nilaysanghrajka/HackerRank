@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-class Solution {
+class day1csharp {
     static void Main(String[] args) {
         int i = 4;
         double d = 4.0;

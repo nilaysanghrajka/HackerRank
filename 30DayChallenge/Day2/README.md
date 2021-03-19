@@ -1,7 +1,7 @@
 # HackerRank Challenge (Day 2: Operators)
 
 ## Objective
-In this challenge, you will work with arithmetic operators. Check out the Tutorial tab for learning materials and an instructional video.
+In this challenge, we work with arithmetic operators.
 
 ## Task
 Given the meal price (base cost of a meal), tip percent (the percentage of the meal price being added as tip), and tax percent (the percentage of the meal price being added as tax) for a meal, find and print the meal's total cost. Round the result to the nearest integer.
@@ -25,8 +25,7 @@ Returns The function returns nothing. Print the calculated value, rounded to the
 **Note**: Be sure to use precise values for your calculations, or you may end up with an incorrectly rounded result.
 
 ## Input Format
-
-There are 3 lines of numeric input:
+There are **3** lines of numeric input:
 The first line has a double, ***mealcost*** (the cost of the meal before tax and tip).
 The second line has an integer, ***tippercent*** (the percentage of ***mealcost*** being added as tip).
 The third line has an integer, ***taxpercent*** (the percentage of ***mealcost*** being added as tax).
@@ -43,8 +42,7 @@ The third line has an integer, ***taxpercent*** (the percentage of ***mealcost**
 ```
 
 ## Languages
-
-These were completed in 
+These were completed in
 - Python3
 - Java
 - C#
