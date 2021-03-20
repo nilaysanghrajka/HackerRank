@@ -1,43 +1,39 @@
-# HackerRank Challenge (Day 10: Binary Numbers)
+# HackerRank Challenge (Day 15: Linked List)
 
 ## Objective
-In this challenge, we're working with binary numbers.
+In this challenge, we're working with Linked List.
 
 ## Task
-Given a base-**10** integer, **n**, convert it to binary (base-**2**). Then find and print the base-**10** integer denoting the maximum number of consecutive **1**'s in **n**'s binary representation. When working with different bases, it is common to show the base as a subscript.
+Complete the insert function in your editor so that it creates a new Node (pass **data** as the Node constructor argument) and inserts it at the tail of the linked list referenced by the **head** parameter. Once the new node is added, return the reference to the **head** node.
+
+**Note:** The **head** argument is null for an empty list.
 
 ## Input Format
-A  single integer, **n**.
+The first line contains T, the number of elements to insert.
+Each of the next **T** lines contains an integer to insert at the end of the list.
 
 ## Output Format
-Print a single base-**10** integer that donates the maximum number of consecutive **1**'s in the binary representation of **n**.
+Return a reference to the **head** node of the linked list.
 
-## Sample Input 1
+## Sample Input
 ```
-5
-```
-
-## Sample Output 1
-```
-1
-```
-
-## Sample Input 2
-```
-13
+STDIN   Function
+-----   --------
+4       T = 4
+2       first data = 2
+3
+4
+1       fourth data = 1
 ```
 
-## Sample Output 2
+## Sample Output
 ```
-2
+2 3 4 1
 ```
 
 ## Explanation
-Sample Case 1:
-The binary representation of **5** is **101**, so the maximum number of consecutive **1**'s is **1**.
-
-Sample Case 2:
-The binary representation of **13** is **1101**, so the maximum number of consecutive **1**'s is **2**.
+**T = 4**, so your method will insert **4** nodes into an initially empty list.
+First the code returns a new node that contains the data value **2** as the **head** of the list. Then create and insert nodes **3**, **4**, and **1** at the tail of the list.
 
 ## Languages
 These were completed in

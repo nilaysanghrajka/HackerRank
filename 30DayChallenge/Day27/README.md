@@ -1,47 +1,44 @@
-# HackerRank Challenge (Day 10: Binary Numbers)
+# HackerRank Challenge (Day 27: Testing)
 
-## Objective
-In this challenge, we're working with binary numbers.
+This problem is about unit testing.
 
-## Task
-Given a base-**10** integer, **n**, convert it to binary (base-**2**). Then find and print the base-**10** integer denoting the maximum number of consecutive **1**'s in **n**'s binary representation. When working with different bases, it is common to show the base as a subscript.
+Your company needs a function that meets the following requirements:
 
-## Input Format
-A  single integer, **n**.
+- For a given array of **n** integers, the function returns the index of the element with the minimum value in the array. If there is more than one element with the minimum value, it returns the smallest one.
+- If an empty array is passed to the function, it raises an exception. A colleague has written this method. The implementation in Python is listed below. Implementations in other languages can be found in the code template.
 
-## Output Format
-Print a single base-**10** integer that donates the maximum number of consecutive **1**'s in the binary representation of **n**.
-
-## Sample Input 1
 ```
-5
-```
-
-## Sample Output 1
-```
-1
+def minimum_index(seq):
+    if len(seq) == 0:
+        raise ValueError("Cannot get the minimum value index from an empty sequence")
+    min_idx = 0
+    for i in range(1, len(seq)):
+        if a[i] < a[min_idx]:
+            min_idx = i
+    return min_idx
 ```
 
-## Sample Input 2
-```
-13
-```
+A coworker has prepared functions that will perform the tests and validate return values. Finish the implementation of **3** classes to provide data and expected results for the tests.
 
-## Sample Output 2
-```
-2
-```
+Complete the following methods.
 
-## Explanation
-Sample Case 1:
-The binary representation of **5** is **101**, so the maximum number of consecutive **1**'s is **1**.
+In the class TestDataEmptyArray:
+- get_array() returns an empty array
 
-Sample Case 2:
-The binary representation of **13** is **1101**, so the maximum number of consecutive **1**'s is **2**.
+In the class TestDataUniqueValues:
+- get_array() returns an array of size at least 2 with all unique elements
+- get_expected_result() returns the expected minimum value index for this array
+
+In the class TestDataExactlyTwoDifferentMinimums:
+- get_array() returns an array where the minimum value occurs at exactly 2 indices
+- get_expected_result() returns the expected index
+
+Take a look at the code template to see the exact implementation of functions that your colleague already implemented.
+
+Note: The arrays are indexed from **0**.
 
 ## Languages
 These were completed in
 - Python3
 - Java
 - C++
-- JavaScript

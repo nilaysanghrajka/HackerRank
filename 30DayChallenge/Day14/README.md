@@ -45,4 +45,3 @@ These were completed in
 - Python3
 - Java
 - C++
-- JavaScript
