@@ -1,34 +1,55 @@
-# HackerRank Challenge (Day 0: Hello World)
+# HackerRank Challenge (Day 6: Let's Review)
 
 ## Objective
-In this challenge, we review some basic concepts that will get you started with this series. You will need to use the same (or similar) syntax to read input and write output in challenges throughout HackerRank.
+In this challenge, we will expand our knowledge of strings, combining it with what we have already learned about loops.
 
 ## Task
-To complete this challenge, you must save a line of input from stdin to a variable, print Hello, World. on a single line, and finally print the value of your variable on a second line.
+Given a string, **S** , of length **N** that is indexed from **0** to **N - 1**, print its even-indexed and odd-indexed characters as **2** space-separated strings on a single line (see the Sample below for more detail).
 
-Note: The instructions are Java-based, but we support submissions in many popular languages. You can switch languages using the drop-down menu above your editor, and the  variable may be written differently depending on the best-practice conventions of your submission language.
+Note: 0 is considered to be an even index.
 
 ## Input Format
-
-A single line of text denoting  (the variable whose contents must be printed).
+The first line contains an integer, **T** (the number of test cases).
+Each line **i** of the **T** subsequent lines contain a string, **S**.
 
 ## Output Format
-
-Print Hello, World. on the first line, and the contents of  on the second line.
+For each String **S** (where **0 <= j <= T -1**), print **S**'s even-indexed characters, followed by a space, followed by **S**'s odd-indexed characters.
 
 ## Sample Input
 ```
-Welcome to 30 Days of Code!
+2
+Hacker
+Rank
 ```
+
 ## Sample Output
 ```
-Hello, World. 
-Welcome to 30 Days of Code!
+Hce akr
+Rn ak
 ```
-## Explanation
 
-On the first line, we print the string literal Hello, World.. On the second line, we print the contents of the  variable which, for this sample case, happens to be Welcome to 30 Days of Code!. If you do not print the variable's contents to stdout, you will not pass the hidden test case.
+## Explanation
+Test Case 0: **S = "Hacker"**
+**S[0] = "H"**
+**S[1] = "a"**
+**S[2] = "c"**
+**S[3] = "k"**
+**S[4] = "e"**
+**S[5] = "r"**
+
+The even indices are **0**, **2** and **4**, and the odd indices are **1**, **3** and **5**. We then print a single line of **2** space-separated strings; the first string contains the ordered characters from **S**'s even indices (**Hce**), and the second string contains the ordered characters from **S**'s odd indices (**akr**).
+
+Test Case 1: **S = "Rank"**
+**S[0] = "R"**
+**S[1] = "a"**
+**S[2] = "n"**
+**S[3] = "k"**
+
+The even indices are **0** and **2**, and the odd indices are **1** and **3**. We then print a single line of **2** space-separated strings; the first string contains the ordered characters from **S**'s even indices (**Rn**), and the second string contains the ordered characters from **S**'s odd indices (**ak**).
 
 ## Languages
-
-These were completed in Python 3, Java, C#, Swift and JavaScript
+These were completed in
+- Python3
+- Java
+- C++
+- JavaScript

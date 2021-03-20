@@ -1,34 +1,66 @@
-# HackerRank Challenge (Day 0: Hello World)
+# HackerRank Challenge (Day 4: Class vs. Instance)
 
 ## Objective
-In this challenge, we review some basic concepts that will get you started with this series. You will need to use the same (or similar) syntax to read input and write output in challenges throughout HackerRank.
+In this challenge, we're going to learn about the difference between a class and an instance; because this is an Object Oriented concept, it's only enabled in certain languages.
 
 ## Task
-To complete this challenge, you must save a line of input from stdin to a variable, print Hello, World. on a single line, and finally print the value of your variable on a second line.
+Write a Person class with an instance variable, **age**, and a constructor that takes an integer, **initialAge**, as a parameter. The constructor must assign **initialAge** to **age** after confirming the argument passed as **initialAge** is not negative; if a negative argument is passed as **initialAge**, the constructor should set **age** to **0** and print Age is not valid, setting age to 0.. In addition, you must write the following instance methods:
 
-Note: The instructions are Java-based, but we support submissions in many popular languages. You can switch languages using the drop-down menu above your editor, and the  variable may be written differently depending on the best-practice conventions of your submission language.
+1. yearPasses() should increase the **age** instance variable by **1**.
+2. amIOld() should perform the following conditional actions:
+  - If **age < 13**, print You are young..
+  - If **age >= 13** and **age < 18**, print You are a teenager..
+Otherwise, print You are old..
+To help you learn by example and complete this challenge, much of the code is provided for you, but you'll be writing everything in the future. The code that creates each instance of your Person class is in the main method. Don't worry if you don't understand it all quite yet!
 
 ## Input Format
-
-A single line of text denoting  (the variable whose contents must be printed).
+Input is handled for you by the stub code in the editor.
+The first line contains an integer, **T** (the number of test cases), and the **T** subsequent lines each contain an integer denoting the **age** of a Person instance.
 
 ## Output Format
-
-Print Hello, World. on the first line, and the contents of  on the second line.
+Complete the method definitions provided in the editor so they meet the specifications outlined above; the code to test your work is already in the editor. If your methods are implemented correctly, each test case will print  or  lines (depending on whether or not a valid **initialAge** was passed to the constructor).
 
 ## Sample Input
 ```
-Welcome to 30 Days of Code!
+4
+-1
+10
+16
+18
 ```
+
 ## Sample Output
 ```
-Hello, World. 
-Welcome to 30 Days of Code!
-```
-## Explanation
+Age is not valid, setting age to 0.
+You are young.
+You are young.
 
-On the first line, we print the string literal Hello, World.. On the second line, we print the contents of the  variable which, for this sample case, happens to be Welcome to 30 Days of Code!. If you do not print the variable's contents to stdout, you will not pass the hidden test case.
+You are young.
+You are a teenager.
+
+You are a teenager.
+You are old.
+
+You are old.
+You are old.
+```
+
+## Explanation
+Test Case 0: **initialAge = -1**
+Because **initialAge < 0**, our code must set  to  and print the "Age is not valid..." message followed by the young message. Three years pass and **age = 3**, so we print the young message again.
+
+Test Case 1: **initialAge = 10**
+Because **initialAge < 13**, our code should print that the person is young. Three years pass and **age = 13**, so we print that the person is now a teenager.
+
+Test Case 2: **initialAge = 16**
+Because **13 <= initialAge < 18**, our code should print that the person is a teenager. Three years pass and **age = 19**, so we print that the person is old.
+
+Test Case 3: **initialAge = 18**
+Because **initialAge >= 18**, our code should print that the person is old. Three years pass and the person is still old at **age = 21**, so we print the old message again.
 
 ## Languages
-
-These were completed in Python 3, Java, C#, Swift and JavaScript
+These were completed in
+- Python3
+- Java
+- C++
+- JavaScript

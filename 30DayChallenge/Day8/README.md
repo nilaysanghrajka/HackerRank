@@ -1,34 +1,56 @@
-# HackerRank Challenge (Day 0: Hello World)
+# HackerRank Challenge (Day 8: Dictionaries and Maps)
 
 ## Objective
-In this challenge, we review some basic concepts that will get you started with this series. You will need to use the same (or similar) syntax to read input and write output in challenges throughout HackerRank.
+In today's challenge, we're learning about Key-Value pair mappings using a Map or Dictionary data structure.
 
 ## Task
-To complete this challenge, you must save a line of input from stdin to a variable, print Hello, World. on a single line, and finally print the value of your variable on a second line.
-
-Note: The instructions are Java-based, but we support submissions in many popular languages. You can switch languages using the drop-down menu above your editor, and the  variable may be written differently depending on the best-practice conventions of your submission language.
+Given **n** names and phone numbers, assemble a phone book that maps friends' names to their respective phone numbers. You will then be given an unknown number of names to query your phone book for. For each **name** queried, print the associated entry from your phone book on a new line in the form name=phoneNumber; if an entry for **name** is not found, print Not found instead.
 
 ## Input Format
+The first line contains an integer, **n**, denoting the number of entries in the phone book.
+Each of the **n** subsequent lines describes an entry in the form of **2** space-separated values on a single line. The first value is a friend's name, and the second value is an **8**-digit phone number.
 
-A single line of text denoting  (the variable whose contents must be printed).
+After the **n** lines of phone book entries, there are an unknown number of lines of queries. Each line (query) contains a **name** to look up, and you must continue reading lines until there is no more input.
 
 ## Output Format
-
-Print Hello, World. on the first line, and the contents of  on the second line.
+Complete the method definitions provided in the editor so they meet the specifications outlined above; the code to test your work is already in the editor. If your methods are implemented correctly, each test case will print  or  lines (depending on whether or not a valid **initialAge** was passed to the constructor).
 
 ## Sample Input
 ```
-Welcome to 30 Days of Code!
+3
+sam 99912222
+tom 11122222
+harry 12299933
+sam
+edward
+harry
 ```
+
 ## Sample Output
 ```
-Hello, World. 
-Welcome to 30 Days of Code!
+sam=99912222
+Not found
+harry=12299933
 ```
-## Explanation
 
-On the first line, we print the string literal Hello, World.. On the second line, we print the contents of the  variable which, for this sample case, happens to be Welcome to 30 Days of Code!. If you do not print the variable's contents to stdout, you will not pass the hidden test case.
+## Explanation
+We add the following **n = 3** (Key,Value) pairs to our map so it looks like this:
+***phoneBook = {(sam, 99912222), (tom, 11122222), (harry, 12299933)}***
+
+We then process each query and print key=value if the queried  is found in the map; otherwise, we print Not found.
+
+Query 0: sam
+Sam is one of the keys in our dictionary, so we print sam=99912222.
+
+Query 1: edward
+Edward is not one of the keys in our dictionary, so we print Not found.
+
+Query 2: harry
+Harry is one of the keys in our dictionary, so we print harry=12299933.
 
 ## Languages
-
-These were completed in Python 3, Java, C#, Swift and JavaScript
+These were completed in
+- Python3
+- Java
+- C++
+- JavaScript

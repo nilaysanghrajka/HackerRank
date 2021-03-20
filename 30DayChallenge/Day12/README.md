@@ -1,34 +1,47 @@
-# HackerRank Challenge (Day 0: Hello World)
+# HackerRank Challenge (Day 10: Binary Numbers)
 
 ## Objective
-In this challenge, we review some basic concepts that will get you started with this series. You will need to use the same (or similar) syntax to read input and write output in challenges throughout HackerRank.
+In this challenge, we're working with binary numbers.
 
 ## Task
-To complete this challenge, you must save a line of input from stdin to a variable, print Hello, World. on a single line, and finally print the value of your variable on a second line.
-
-Note: The instructions are Java-based, but we support submissions in many popular languages. You can switch languages using the drop-down menu above your editor, and the  variable may be written differently depending on the best-practice conventions of your submission language.
+Given a base-**10** integer, **n**, convert it to binary (base-**2**). Then find and print the base-**10** integer denoting the maximum number of consecutive **1**'s in **n**'s binary representation. When working with different bases, it is common to show the base as a subscript.
 
 ## Input Format
-
-A single line of text denoting  (the variable whose contents must be printed).
+A  single integer, **n**.
 
 ## Output Format
+Print a single base-**10** integer that donates the maximum number of consecutive **1**'s in the binary representation of **n**.
 
-Print Hello, World. on the first line, and the contents of  on the second line.
+## Sample Input 1
+```
+5
+```
 
-## Sample Input
+## Sample Output 1
 ```
-Welcome to 30 Days of Code!
+1
 ```
-## Sample Output
+
+## Sample Input 2
 ```
-Hello, World. 
-Welcome to 30 Days of Code!
+13
 ```
+
+## Sample Output 2
+```
+2
+```
+
 ## Explanation
+Sample Case 1:
+The binary representation of **5** is **101**, so the maximum number of consecutive **1**'s is **1**.
 
-On the first line, we print the string literal Hello, World.. On the second line, we print the contents of the  variable which, for this sample case, happens to be Welcome to 30 Days of Code!. If you do not print the variable's contents to stdout, you will not pass the hidden test case.
+Sample Case 2:
+The binary representation of **13** is **1101**, so the maximum number of consecutive **1**'s is **2**.
 
 ## Languages
-
-These were completed in Python 3, Java, C#, Swift and JavaScript
+These were completed in
+- Python3
+- Java
+- C++
+- JavaScript

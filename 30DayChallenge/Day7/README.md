@@ -1,34 +1,32 @@
-# HackerRank Challenge (Day 0: Hello World)
+# HackerRank Challenge (Day 7: Arrays)
 
 ## Objective
-In this challenge, we review some basic concepts that will get you started with this series. You will need to use the same (or similar) syntax to read input and write output in challenges throughout HackerRank.
+In this challenge, we're going to learn about the Array data structure.
 
 ## Task
-To complete this challenge, you must save a line of input from stdin to a variable, print Hello, World. on a single line, and finally print the value of your variable on a second line.
-
-Note: The instructions are Java-based, but we support submissions in many popular languages. You can switch languages using the drop-down menu above your editor, and the  variable may be written differently depending on the best-practice conventions of your submission language.
+Given an array, **A**, of **N** integers, print **N**'s elements in reverse order as a single line of space-separated numbers.
 
 ## Input Format
-
-A single line of text denoting  (the variable whose contents must be printed).
+The first line contains an integer, **N** (the size of our array).
+The second line contains **N** space-separated integers that describe array **A**'s elements.
 
 ## Output Format
-
-Print Hello, World. on the first line, and the contents of  on the second line.
+Print the elements of array **A** in reverse order as a single line of space-separated numbers.
 
 ## Sample Input
 ```
-Welcome to 30 Days of Code!
+4
+1 4 3 2
 ```
+
 ## Sample Output
 ```
-Hello, World. 
-Welcome to 30 Days of Code!
+2 3 4 1
 ```
-## Explanation
-
-On the first line, we print the string literal Hello, World.. On the second line, we print the contents of the  variable which, for this sample case, happens to be Welcome to 30 Days of Code!. If you do not print the variable's contents to stdout, you will not pass the hidden test case.
 
 ## Languages
-
-These were completed in Python 3, Java, C#, Swift and JavaScript
+These were completed in
+- Python3
+- Java
+- C++
+- JavaScript

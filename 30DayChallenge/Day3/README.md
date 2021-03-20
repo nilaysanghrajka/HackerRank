@@ -1,4 +1,4 @@
-# HackerRank Challenge (Day 0: Hello World)
+# HackerRank Challenge (Day 3: Intro to Conditional Statements)
 
 ## Objective
 In this challenge, we work conditional statements.
@@ -22,6 +22,7 @@ Print Weird if the number is weird; otherwise, print Not Weird.
 ```
 3
 ```
+
 ## Sample Output 0
 ```
 Weird
@@ -31,6 +32,7 @@ Weird
 ```
 24
 ```
+
 ## Sample Output 1
 ```
 Not Weird
@@ -47,6 +49,5 @@ Sample Case 1: **n = 24**
 These were completed in
 - Python3
 - Java
-- C#
-- Swift
+- C++
 - JavaScript

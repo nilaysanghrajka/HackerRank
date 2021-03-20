@@ -36,6 +36,7 @@ The third line has an integer, ***taxpercent*** (the percentage of ***mealcost**
 20
 8
 ```
+
 ## Sample Output
 ```
 15
@@ -45,6 +46,5 @@ The third line has an integer, ***taxpercent*** (the percentage of ***mealcost**
 These were completed in
 - Python3
 - Java
-- C#
-- Swift
+- C++
 - JavaScript

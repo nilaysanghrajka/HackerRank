@@ -16,13 +16,11 @@ Note: If you are using a language that doesn't support using + for string concat
 Note: The instructions are Java-based, but we support submissions in many popular languages. You can switch languages using the drop-down menu above your editor, and the  variable may be written differently depending on the best-practice conventions of your submission language.
 
 ## Input Format
-
 The first line contains an integer that you must sum with **i**.
 The second line contains a double that you must sum with **d**.
 The third line contains a string that you must concatenate with **s**.
 
 ## Output Format
-
 Print the sum of both integers on the first line, the sum of both doubles (scaled to 1 decimal place) on the second line, and then the two concatenated strings on the third line.
 
 ## Sample Input
@@ -31,23 +29,22 @@ Print the sum of both integers on the first line, the sum of both doubles (scale
 4.0
 is the best place to learn and practice coding!
 ```
+
 ## Sample Output
 ```
 16
 8.0
 HackerRank is the best place to learn and practice coding!
 ```
-## Explanation
 
+## Explanation
 When we sum the integers 4 and 12, we get the integer 16.
 When we sum the floating-point numbers 4.0 and 4.0, we get 8.0.
 When we concatenate HackerRank with is the best place to learn and practice coding!, we get HackerRank is the best place to learn and practice coding!.
 
 ## Languages
-
 These were completed in
 - Python3
 - Java
-- C#
-- Swift
+- C++
 - JavaScript

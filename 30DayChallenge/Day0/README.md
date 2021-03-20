@@ -18,6 +18,7 @@ Print Hello, World. on the first line, and the contents of  on the second line.
 ```
 Welcome to 30 Days of Code!
 ```
+
 ## Sample Output
 ```
 Hello, World.
@@ -31,6 +32,5 @@ On the first line, we print the string literal Hello, World.. On the second line
 These were completed in
 - Python3
 - Java
-- C#
-- Swift
+- C++
 - JavaScript

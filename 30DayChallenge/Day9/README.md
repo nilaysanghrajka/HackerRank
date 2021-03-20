@@ -1,34 +1,43 @@
-# HackerRank Challenge (Day 0: Hello World)
+# HackerRank Challenge (Day 9: Recursion 3)
 
 ## Objective
-In this challenge, we review some basic concepts that will get you started with this series. You will need to use the same (or similar) syntax to read input and write output in challenges throughout HackerRank.
+In this challenge, we're going to learn about an algorithmic concept called recursion.
 
 ## Task
-To complete this challenge, you must save a line of input from stdin to a variable, print Hello, World. on a single line, and finally print the value of your variable on a second line.
+Complete the factorial function in the editor below. Be sure to use recursion.
 
-Note: The instructions are Java-based, but we support submissions in many popular languages. You can switch languages using the drop-down menu above your editor, and the  variable may be written differently depending on the best-practice conventions of your submission language.
+factorial has the following parameter:
+
+- int n: an integer
+Returns
+
+- int: the factorial of **n**
 
 ## Input Format
-
-A single line of text denoting  (the variable whose contents must be printed).
+A single integer, **n** (the argument to pass to factorial).
 
 ## Output Format
-
-Print Hello, World. on the first line, and the contents of  on the second line.
+Complete the method definitions provided in the editor so they meet the specifications outlined above; the code to test your work is already in the editor. If your methods are implemented correctly, each test case will print  or  lines (depending on whether or not a valid **initialAge** was passed to the constructor).
 
 ## Sample Input
 ```
-Welcome to 30 Days of Code!
+3
 ```
+
 ## Sample Output
 ```
-Hello, World. 
-Welcome to 30 Days of Code!
+6
 ```
-## Explanation
 
-On the first line, we print the string literal Hello, World.. On the second line, we print the contents of the  variable which, for this sample case, happens to be Welcome to 30 Days of Code!. If you do not print the variable's contents to stdout, you will not pass the hidden test case.
+## Explanation
+Consider the following steps. After the recursive calls from step 1 to 3, results are accumulated from step 3 to 1.
+1. ***factorial(3) = 3 x factorial(2) = 3 x 2 = 6***
+2. ***factorial(2) = 2 x factorial(1) = 2 x 1 = 2***
+3. ***factorial(1) = 1***
 
 ## Languages
-
-These were completed in Python 3, Java, C#, Swift and JavaScript
+These were completed in
+- Python3
+- Java
+- C++
+- JavaScript

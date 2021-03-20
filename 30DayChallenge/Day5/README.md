@@ -1,34 +1,40 @@
-# HackerRank Challenge (Day 0: Hello World)
+# HackerRank Challenge (Day 5: Loops)
 
 ## Objective
-In this challenge, we review some basic concepts that will get you started with this series. You will need to use the same (or similar) syntax to read input and write output in challenges throughout HackerRank.
+In this challenge, we will use loops to do some math. Check out the Tutorial tab to learn more.
 
 ## Task
-To complete this challenge, you must save a line of input from stdin to a variable, print Hello, World. on a single line, and finally print the value of your variable on a second line.
-
-Note: The instructions are Java-based, but we support submissions in many popular languages. You can switch languages using the drop-down menu above your editor, and the  variable may be written differently depending on the best-practice conventions of your submission language.
+Given an integer, **n**, print its first **10** multiples. Each multiple **n x i** (where **1 <= i <= 10**) should be printed on a new line in the form: n x i = result.
 
 ## Input Format
-
-A single line of text denoting  (the variable whose contents must be printed).
+A single integer **n**.
 
 ## Output Format
-
-Print Hello, World. on the first line, and the contents of  on the second line.
+Print **10** lines of output; each line **i** (where **1 <= i <= 10**) contains the **result** of **n x i** in the form:
+n x i = result
 
 ## Sample Input
 ```
-Welcome to 30 Days of Code!
+2
 ```
+
 ## Sample Output
 ```
-Hello, World. 
-Welcome to 30 Days of Code!
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+2 x 10 = 20
 ```
-## Explanation
-
-On the first line, we print the string literal Hello, World.. On the second line, we print the contents of the  variable which, for this sample case, happens to be Welcome to 30 Days of Code!. If you do not print the variable's contents to stdout, you will not pass the hidden test case.
 
 ## Languages
-
-These were completed in Python 3, Java, C#, Swift and JavaScript
+These were completed in
+- Python3
+- Java
+- C++
+- JavaScript
