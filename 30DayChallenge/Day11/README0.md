@@ -1,43 +1,59 @@
-# HackerRank Challenge (Day 10: Binary Numbers)
+# HackerRank Challenge (Day 11: 2D Arrays)
 
 ## Objective
-In this challenge, we're working with binary numbers.
+In this challenge, we're building on our knowledge of arrays by adding another dimension.
 
 ## Task
-Given a base-**10** integer, **n**, convert it to binary (base-**2**). Then find and print the base-**10** integer denoting the maximum number of consecutive **1**'s in **n**'s binary representation. When working with different bases, it is common to show the base as a subscript.
+Calculate the hourglass sum for every hourglass in **A**, then print the maximum hourglass sum.
 
 ## Input Format
-A  single integer, **n**.
+There are **6** lines of input, where each line contains **6** space-separated integers that describe the 2D Array **A**.
 
 ## Output Format
-Print a single base-**10** integer that donates the maximum number of consecutive **1**'s in the binary representation of **n**.
+Print the maximum hourglass sum in **A**.
 
-## Sample Input 1
+## Sample Input
 ```
-5
-```
-
-## Sample Output 1
-```
-1
-```
-
-## Sample Input 2
-```
-13
+1 1 1 0 0 0
+0 1 0 0 0 0
+1 1 1 0 0 0
+0 0 2 4 4 0
+0 0 0 2 0 0
+0 0 1 2 4 0
 ```
 
-## Sample Output 2
+## Sample Output
 ```
-2
+19
 ```
 
 ## Explanation
-Sample Case 1:
-The binary representation of **5** is **101**, so the maximum number of consecutive **1**'s is **1**.
+**A** contains the following hourglasses:
 
-Sample Case 2:
-The binary representation of **13** is **1101**, so the maximum number of consecutive **1**'s is **2**.
+```
+1 1 1   1 1 0   1 0 0   0 0 0
+  1       0       0       0
+1 1 1   1 1 0   1 0 0   0 0 0
+
+0 1 0   1 0 0   0 0 0   0 0 0
+  1       1       0       0
+0 0 2   0 2 4   2 4 4   4 4 0
+
+1 1 1   1 1 0   1 0 0   0 0 0
+  0       2       4       4
+0 0 0   0 0 2   0 2 0   2 0 0
+
+0 0 2   0 2 4   2 4 4   4 4 0
+  0       0       2       0
+0 0 1   0 1 2   1 2 4   2 4 0
+```
+
+The hourglass with the maximum sum (**19**) is:
+```
+2 4 4
+  2
+1 2 4
+```
 
 ## Languages
 These were completed in

@@ -1,43 +1,41 @@
-# HackerRank Challenge (Day 10: Binary Numbers)
+# HackerRank Challenge (Day 12: Inheritance)
 
 ## Objective
-In this challenge, we're working with binary numbers.
+In this challenge, we're delving into inheritance.
 
 ## Task
-Given a base-**10** integer, **n**, convert it to binary (base-**2**). Then find and print the base-**10** integer denoting the maximum number of consecutive **1**'s in **n**'s binary representation. When working with different bases, it is common to show the base as a subscript.
+You are given two classes, Person and Student, where Person is the base class and Student is the derived class. Completed code for Person and a declaration for Student are provided for you in the editor. Observe that Student inherits all the properties of Person.
+
+Complete the Student class by writing the following:
+
+- A Student class constructor, which has **4** parameters:
+  1. A string, ***firstName***.
+  2. A string, ***lastName***.
+  3. An integer, ***idNumber***.
+  4. An integer array (or vector) of test scores, **scores**.
+- A char calculate() method that calculates a Student object's average and returns the grade character representative of their calculated average:
 
 ## Input Format
-A  single integer, **n**.
+The locked stub code in the editor reads the input and calls the Student class constructor with the necessary arguments. It also calls the calculate method which takes no arguments.
+
+The first line contains ***firstName***, ***lastName*** and ***idNumber***, separated by a space. The second line contains the number of test scores. The third line of space-separated integers describes **scores**.
 
 ## Output Format
-Print a single base-**10** integer that donates the maximum number of consecutive **1**'s in the binary representation of **n**.
+Output is handled by the locked stub code. Your output will be correct if your Student class constructor and calculate() method are properly implemented.
 
-## Sample Input 1
+## Sample Input
 ```
-5
-```
-
-## Sample Output 1
-```
-1
-```
-
-## Sample Input 2
-```
-13
-```
-
-## Sample Output 2
-```
+Heraldo Memelli 8135627
 2
+100 80
 ```
 
-## Explanation
-Sample Case 1:
-The binary representation of **5** is **101**, so the maximum number of consecutive **1**'s is **1**.
-
-Sample Case 2:
-The binary representation of **13** is **1101**, so the maximum number of consecutive **1**'s is **2**.
+## Sample Output
+```
+Name: Memelli, Heraldo
+ID: 8135627
+Grade: O
+```
 
 ## Languages
 These were completed in
