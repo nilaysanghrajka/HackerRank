@@ -3,12 +3,15 @@
 ## Objective
 Today we're discussing scope. Check out the Tutorial tab for learning materials and an instructional video!
 
-The absolute difference between two integers, **a** and **b**, is written as **|a-b|**. The maximum absolute difference between two integers in a set of positive integers, , is the largest absolute difference between any two integers in .
+The absolute difference between two integers, **a** and **b**, is written as **|a-b|**. The maximum absolute difference between two integers in a set of positive integers, **elements**, is the largest absolute difference between any two integers in **_elements**.
 
-The Difference class is started for you in the editor. It has a private integer array () for storing  non-negative integers, and a public integer () for storing the maximum absolute difference.
+The Difference class is started for you in the editor. It has a private integer array (**elements**) for storing **N** non-negative integers, and a public integer (**maximumDifference**) for storing the maximum absolute difference.
 
 ## Task
-Given a base-**10** integer, **n**, convert it to binary (base-**2**). Then find and print the base-**10** integer denoting the maximum number of consecutive **1**'s in **n**'s binary representation. When working with different bases, it is common to show the base as a subscript.
+Complete the Difference class by writing the following:
+
+- A class constructor that takes an array of integers as a parameter and saves it to the **_elements** instance variable.
+- A computeDifference method that finds the maximum absolute difference between any **2** numbers in **_elements** and stores it in the **maximumDifference** instance variable.
 
 ## Input Format
 A  single integer, **n**.
