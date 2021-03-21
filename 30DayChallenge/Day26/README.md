@@ -1,43 +1,46 @@
-# HackerRank Challenge (Day 10: Binary Numbers)
+# HackerRank Challenge (Day 26: Nested Logic)
 
 ## Objective
-In this challenge, we're working with binary numbers.
+In this challenge, we're putting the understanding of nested conditional statements to the test.
 
 ## Task
-Given a base-**10** integer, **n**, convert it to binary (base-**2**). Then find and print the base-**10** integer denoting the maximum number of consecutive **1**'s in **n**'s binary representation. When working with different bases, it is common to show the base as a subscript.
+Your local library needs your help! Given the expected and actual return dates for a library book, create a program that calculates the fine (if any). The fee structure is as follows:
+
+1. If the book is returned on or before the expected return date, no fine will be charged (i.e.: **fine = 0**).
+2. If the book is returned after the expected return day but still within the same calendar month and year as the expected return date, **fine = 15 Hackos x (the number of days late)**.
+3. If the book is returned after the expected return month but still within the same calendar year as the expected return date, the **fine = 500 Hackos x (the number of months late)**.
+4. If the book is returned after the calendar year in which it was expected, there is a fixed fine of **10000 Hackos**.
 
 ## Input Format
-A  single integer, **n**.
+The first line contains **3** space-separated integers denoting the respective **day**, **month**, and **year** on which the book was actually returned.
+The second line contains **3** space-separated integers denoting the respective **day**, **month**, and **year** on which the book was expected to be returned (due date).
 
 ## Output Format
-Print a single base-**10** integer that donates the maximum number of consecutive **1**'s in the binary representation of **n**.
+Print a single integer denoting the library fine for the book received as input.
 
-## Sample Input 1
+## Sample Input
 ```
-5
-```
-
-## Sample Output 1
-```
-1
+STDIN       Function
+-----       --------
+9 6 2015    day = 9, month = 6, year = 2015 (date returned)
+6 6 2015    day = 6, month = 6, year = 2015 (date due)
 ```
 
-## Sample Input 2
+## Sample Output
 ```
-13
-```
-
-## Sample Output 2
-```
-2
+45
 ```
 
 ## Explanation
-Sample Case 1:
-The binary representation of **5** is **101**, so the maximum number of consecutive **1**'s is **1**.
+Given the following return dates:
+Returned: **D1 = 9, M1 = 6, Y1 = 2015**
+Due: **D2 = 6, M2 = 6, Y2 = 2015**
 
-Sample Case 2:
-The binary representation of **13** is **1101**, so the maximum number of consecutive **1**'s is **2**.
+Because **Y2 = Y1**, it is less than a year late.
+Because **M2 = M1**, it is less than a month late.
+Because **D2 < D1**, it was returned late (but still within the same month and year).
+
+Per the library's fee structure, we know that our fine will be **15 Hackos x (# days late)**. We then print the result of **15 x (D1 - D2) = 15 x (9 - 6) = 45** as our output.
 
 ## Languages
 These were completed in

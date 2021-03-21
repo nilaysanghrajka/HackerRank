@@ -1,43 +1,42 @@
-# HackerRank Challenge (Day 10: Binary Numbers)
+# HackerRank Challenge (Day 16: Exceptions - String to Integer)
 
 ## Objective
-In this challenge, we're working with binary numbers.
+In this challenge, we're working with Exceptions by learning how to parse an integer from a string and print a custom error message.
 
 ## Task
-Given a base-**10** integer, **n**, convert it to binary (base-**2**). Then find and print the base-**10** integer denoting the maximum number of consecutive **1**'s in **n**'s binary representation. When working with different bases, it is common to show the base as a subscript.
+Read a string, **S**, and print its integer value; if **S** cannot be converted to an integer, print *Bad String*.
 
 ## Input Format
-A  single integer, **n**.
+A  single string, **SS**.
 
 ## Output Format
-Print a single base-**10** integer that donates the maximum number of consecutive **1**'s in the binary representation of **n**.
+Print the parsed integer value of **S**, or *Bad String* if **S** cannot be converted to an integer.
 
 ## Sample Input 1
 ```
-5
+3
 ```
 
 ## Sample Output 1
 ```
-1
+3
 ```
 
 ## Sample Input 2
 ```
-13
+za
 ```
 
 ## Sample Output 2
 ```
-2
+Bad String
 ```
 
 ## Explanation
-Sample Case 1:
-The binary representation of **5** is **101**, so the maximum number of consecutive **1**'s is **1**.
+Sample Case 1 contains an integer, so it should not raise an exception when we attempt to convert it to an integer. Thus, we print the **3**.
 
-Sample Case 2:
-The binary representation of **13** is **1101**, so the maximum number of consecutive **1**'s is **2**.
+Sample Case 2 does not contains any integers, so an attempt to convert it to an integer will raise an exception. Thus, out exception handler prints the *Bad String*.
+
 
 ## Languages
 These were completed in

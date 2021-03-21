@@ -1,43 +1,46 @@
-# HackerRank Challenge (Day 10: Binary Numbers)
+# HackerRank Challenge (Day 29: Bitwise AND)
 
 ## Objective
-In this challenge, we're working with binary numbers.
+In this challenge, we're discussing bitwise operations.
 
 ## Task
-Given a base-**10** integer, **n**, convert it to binary (base-**2**). Then find and print the base-**10** integer denoting the maximum number of consecutive **1**'s in **n**'s binary representation. When working with different bases, it is common to show the base as a subscript.
+Given set **s - {1,2,3,...,N}**. Find two integers, **A** and **B** (where **A < B**), from set **S** such that the value of **A&B** is the maximum possible and also less than a given integer, **K**. In this case, **&** represents the bitwise AND operator.
 
 ## Input Format
-A  single integer, **n**.
+The first line contains an integer, **T**, the number of test cases.
+Each of the **T** subsequent lines defines a test case as **2** space-separated integers, **N** and **K**, respectively.
 
-## Output Format
-Print a single base-**10** integer that donates the maximum number of consecutive **1**'s in the binary representation of **n**.
-
-## Sample Input 1
+## Sample Input
 ```
-5
+STDIN   Function
+-----   --------
+3       T = 3
+5 2     N = 5, K = 2
+8 5     N = 8, K = 5
+2 2     N = 8, K = 5
 ```
 
-## Sample Output 1
+## Sample Output
 ```
 1
-```
-
-## Sample Input 2
-```
-13
-```
-
-## Sample Output 2
-```
-2
+4
+0
 ```
 
 ## Explanation
-Sample Case 1:
-The binary representation of **5** is **101**, so the maximum number of consecutive **1**'s is **1**.
 
-Sample Case 2:
-The binary representation of **13** is **1101**, so the maximum number of consecutive **1**'s is **2**.
+**N = 5, K = 2, S = {1,2,3,4,5}**
+All possible values of **A** and **B** are:
+1. **A = 1, B = 2; A & B = 0**
+2. **A = 1, B = 3; A & B = 1**
+3. **A = 1, B = 4; A & B = 0**
+4. **A = 1, B = 5; A & B = 1**
+5. **A = 2, B = 3; A & B = 2**
+6. **A = 2, B = 4; A & B = 0**
+7. **A = 2, B = 5; A & B = 0**
+8. **A = 3, B = 4; A & B = 0**
+9. **A = 3, B = 5; A & B = 1**
+10. **A = 4, B = 5; A & B = 4**
 
 ## Languages
 These were completed in

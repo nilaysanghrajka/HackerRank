@@ -1,43 +1,33 @@
-# HackerRank Challenge (Day 10: Binary Numbers)
+# HackerRank Challenge (Day 17: More Exceptions)
 
 ## Objective
-In this challenge, we're working with binary numbers.
+In this challenge, we will practice throwing and propagating an exception.
 
 ## Task
-Given a base-**10** integer, **n**, convert it to binary (base-**2**). Then find and print the base-**10** integer denoting the maximum number of consecutive **1**'s in **n**'s binary representation. When working with different bases, it is common to show the base as a subscript.
+Write a Calculator class with a single method: int power(int,int). The power method takes two integers, **n** and **p**, as parameters and returns the integer result of **n**. If either **n** or **p** is negative, then the method must throw an exception with the message: *n* and *p* should be *non-negative*.
 
 ## Input Format
-A  single integer, **n**.
+Input from stdin is handled for you by the locked stub code in your editor. The first line contains an integer, **T**, the number of test cases. Each of the **T** subsequent lines describes a test case in **2** space-separated integers that denote **n** and **p**, respectively.
 
 ## Output Format
-Print a single base-**10** integer that donates the maximum number of consecutive **1**'s in the binary representation of **n**.
+No Test Case will result in overflow for correctly written code.
 
-## Sample Input 1
+## Sample Input
 ```
-5
-```
-
-## Sample Output 1
-```
-1
-```
-
-## Sample Input 2
-```
-13
+4
+3 5
+2 4
+-1 -2
+-1 3
 ```
 
-## Sample Output 2
+## Sample Output
 ```
-2
+243
+16
+n and p should be non-negative
+n and p should be non-negative
 ```
-
-## Explanation
-Sample Case 1:
-The binary representation of **5** is **101**, so the maximum number of consecutive **1**'s is **1**.
-
-Sample Case 2:
-The binary representation of **13** is **1101**, so the maximum number of consecutive **1**'s is **2**.
 
 ## Languages
 These were completed in

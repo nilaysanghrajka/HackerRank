@@ -1,43 +1,38 @@
-# HackerRank Challenge (Day 10: Binary Numbers)
+# HackerRank Challenge (Day 23: BST Level-Order Traversal)
 
 ## Objective
-In this challenge, we're working with binary numbers.
+In this challenge, we're going further with Binary Search Trees.
 
 ## Task
-Given a base-**10** integer, **n**, convert it to binary (base-**2**). Then find and print the base-**10** integer denoting the maximum number of consecutive **1**'s in **n**'s binary representation. When working with different bases, it is common to show the base as a subscript.
+A level-order traversal, also known as a breadth-first search, visits each level of a tree's nodes from left to right, top to bottom. You are given a pointer, **root**, pointing to the root of a binary search tree. Complete the levelOrder function provided in your editor so that it prints the level-order traversal of the binary search tree.
 
 ## Input Format
-A  single integer, **n**.
+The locked stub code in your editor reads the following inputs and assembles them into a BST:
+The first line contains an integer, **T** (the number of test cases).
+The **T** subsequent lines each contain an integer, **data**, denoting the value of an element that must be added to the BST.
 
 ## Output Format
-Print a single base-**10** integer that donates the maximum number of consecutive **1**'s in the binary representation of **n**.
+Print the **data** value of each node in the tree's level-order traversal as a single line of **N** space-separated integers.
 
-## Sample Input 1
+## Sample Input
 ```
+6
+3
 5
-```
-
-## Sample Output 1
-```
+4
+7
+2
 1
 ```
 
-## Sample Input 2
+## Sample Output
 ```
-13
-```
-
-## Sample Output 2
-```
-2
+3 2 5 1 4 7
 ```
 
 ## Explanation
-Sample Case 1:
-The binary representation of **5** is **101**, so the maximum number of consecutive **1**'s is **1**.
-
-Sample Case 2:
-The binary representation of **13** is **1101**, so the maximum number of consecutive **1**'s is **2**.
+We traverse each level of the tree from the root downward, and we process the nodes at each level from left to right. The resulting level-order traversal is
+**3 -> 2 -> 5 -> 1 -> 4 -> 7**, and we print these data values as a single line of space-separated integers.
 
 ## Languages
 These were completed in

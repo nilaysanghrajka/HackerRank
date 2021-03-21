@@ -1,43 +1,42 @@
-# HackerRank Challenge (Day 10: Binary Numbers)
+# HackerRank Challenge (Day 25: Running Time and Complexity)
 
 ## Objective
-In this challenge, we're working with binary numbers.
+In this challenge, we will learn about running time, also known as time complexity.
 
 ## Task
-Given a base-**10** integer, **n**, convert it to binary (base-**2**). Then find and print the base-**10** integer denoting the maximum number of consecutive **1**'s in **n**'s binary representation. When working with different bases, it is common to show the base as a subscript.
+A prime is a natural number greater than **1** that has no positive divisors other than **1** and itself. Given a number, **n**, determine and print whether it is **Prime** or **Not Prime**.
 
 ## Input Format
-A  single integer, **n**.
+The first line contains an integer, **T**, the number of test cases.
+Each of the **T** subsequent lines contains an integer, **n**, to be tested for primality.
 
 ## Output Format
-Print a single base-**10** integer that donates the maximum number of consecutive **1**'s in the binary representation of **n**.
+For each test case, print whether **n** is **Prime** or **Not Prime** on a new line.
 
-## Sample Input 1
+## Sample Input
 ```
+3
+12
 5
+7
 ```
 
-## Sample Output 1
+## Sample Output
 ```
-1
-```
-
-## Sample Input 2
-```
-13
-```
-
-## Sample Output 2
-```
-2
+Not prime
+Prime
+Prime
 ```
 
 ## Explanation
-Sample Case 1:
-The binary representation of **5** is **101**, so the maximum number of consecutive **1**'s is **1**.
+Test Case 0: **n = 12**.
+**12** is divisible by numbers other than **1** and itself (i.e.: **2, 3, 4, 6**), so we print **Not Prime** on a new line.
 
-Sample Case 2:
-The binary representation of **13** is **1101**, so the maximum number of consecutive **1**'s is **2**.
+Test Case 1: **n = 6**.
+**5** is only divisible **1** and itself, so we print **Prime** on a new line.
+
+Test Case 2: **n = 7**.
+**7** is only divisible **1** and itself, so we print **Prime** on a new line.
 
 ## Languages
 These were completed in

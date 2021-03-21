@@ -1,43 +1,39 @@
-# HackerRank Challenge (Day 10: Binary Numbers)
+# HackerRank Challenge (Day 24: More Linked Lists)
 
 ## Objective
-In this challenge, we're working with binary numbers.
+In this challenge, we're working with more Linked Lists.
 
 ## Task
-Given a base-**10** integer, **n**, convert it to binary (base-**2**). Then find and print the base-**10** integer denoting the maximum number of consecutive **1**'s in **n**'s binary representation. When working with different bases, it is common to show the base as a subscript.
+A Node class is provided for you in the editor. A Node object has an integer data field, **data**, and a Node instance pointer, **next**, pointing to another node (i.e.: the next node in a list).
+
+A removeDuplicates function is declared in your editor, which takes a pointer to the **head** node of a linked list as a parameter. Complete removeDuplicates so that it deletes any duplicate nodes from the list and returns the head of the updated list.
 
 ## Input Format
-A  single integer, **n**.
+You do not need to read any input from stdin. The following input is handled by the locked stub code and passed to the removeDuplicates function:
+The first line contains an integer, **N**, the number of nodes to be inserted.
+The **N** subsequent lines each contain an integer describing the **data** value of a node being inserted at the list's tail.
 
 ## Output Format
-Print a single base-**10** integer that donates the maximum number of consecutive **1**'s in the binary representation of **n**.
+Your removeDuplicates function should return the head of the updated linked list. The locked stub code in your editor will print the returned list to stdout.
 
-## Sample Input 1
+## Sample Input
 ```
-5
-```
-
-## Sample Output 1
-```
+6
 1
-```
-
-## Sample Input 2
-```
-13
-```
-
-## Sample Output 2
-```
 2
+2
+3
+3
+4
+```
+
+## Sample Output
+```
+1 2 3 4
 ```
 
 ## Explanation
-Sample Case 1:
-The binary representation of **5** is **101**, so the maximum number of consecutive **1**'s is **1**.
-
-Sample Case 2:
-The binary representation of **13** is **1101**, so the maximum number of consecutive **1**'s is **2**.
+**N = 6**, and our non-decreasing list is **{1,2,2,3,3,4,}**. The values **2** and **3** both occur twice in the list, so we remove the two duplicate nodes. We then return our updated (ascending) list, which is **{1,2,3,4}**.
 
 ## Languages
 These were completed in
